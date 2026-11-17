@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SamuAI" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/samu_pink</item>
+        <item name="colorPrimaryDark">@color/samu_dark</item>
+        <item name="colorAccent">@color/samu_purple</item>
+        <item name="android:windowBackground">@color/samu_bg</item>
+        <item name="android:statusBarColor">@color/samu_dark</item>
+        <item name="android:navigationBarColor">@color/samu_dark</item>
+    </style>
+
+    <style name="SamuCard">
+        <item name="android:background">@drawable/bg_card</item>
+        <item name="android:padding">14dp</item>
+    </style>
+
+    <style name="SamuSectionTitle">
+        <item name="android:textColor">@color/samu_pink</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">18dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+    </style>
+
+    <style name="SamuInput">
+        <item name="android:background">@drawable/bg_input</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textColor">@color/samu_text</item>
+        <item name="android:textColorHint">@color/samu_text_dim</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SamuButton">
+        <item name="android:background">@drawable/bg_button</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:paddingLeft">14dp</item>
+        <item name="android:paddingRight">14dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>

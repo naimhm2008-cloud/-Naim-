@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Samu AI</string>
+
+    <!-- Notification channels -->
+    <string name="channel_service_name">Samu সার্ভিস</string>
+    <string name="channel_service_desc">Samu কে সবসময় চালু রাখার সার্ভিস</string>
+    <string name="channel_alerts_name">Samu অ্যালার্ট</string>
+    <string name="channel_alerts_desc">ইমার্জেন্সি ও গুরুত্বপূর্ণ সংবাদ</string>
+
+    <!-- Foreground notification -->
+    <string name="notif_title">Samu AI জেগে আছে</string>
+    <string name="notif_text">\"Hey Samu\" বা বিশেষ নামে ডাক দিন</string>
+
+    <!-- Status -->
+    <string name="status_active">সবসময় অ্যাক্টিভ 🟢</string>
+    <string name="status_listening">শুনছি… 🎧</string>
+    <string name="status_need_mic">মাইক পারমিশন দিন</string>
+    <string name="status_sleep_mode">স্লিপ মোড (ব্যাটারি কম) 🔋</string>
+    <string name="status_checking_boss">বসকে চিনছি… 📸</string>
+
+    <!-- Home -->
+    <string name="home_welcome">হ্যালো বস! আমি Samu 🤖💕 আমাকে \"Hey Samu\" বলে ডাকুন, আর কাজ করাতে চাইলে বিশেষ নামে ডাক দিন!</string>
+    <string name="home_tap_hint">আমি এখানেই আছি বস!</string>
+
+    <!-- Chat -->
+    <string name="chat_hello">হ্যালো বস! আমি Samu 💕 যা জানতে চান লিখুন বা বলুন। বাংলা-ইংরেজি দুটোতেই উত্তর দেব!</string>
+    <string name="chat_hint">কিছু লিখুন…</string>
+    <string name="chat_send">পাঠান</string>
+
+    <!-- Voice lock -->
+    <string name="refuse_no_boss">বসের অনুমতি ছাড়া পাবো না 😅</string>
+    <string name="refuse_not_boss">আপনি আমার বস না, বসের অনুমতি ছাড়া পাবো না 🚫</string>
+    <string name="boss_verified">হ্যাঁ বস! আপনাকে চিনেছি ✅ কী করব?</string>
+    <string name="boss_photo_missing">বস, আগে অ্যাপে গিয়ে আপনার পিক সেট করে দিন, তাহলে আমি আপনাকে চিনতে পারব!</string>
+
+    <!-- Emergency -->
+    <string name="emergency_response">বস! আমি এখনই ইমার্জেন্সি কল দিচ্ছি 🚨</string>
+    <string name="emergency_sms_body">আমি বিপদে আছি! আমার লোকেশন:</string>
+
+    <!-- AI / online -->
+    <string name="no_api_key">বস, আগে সেটিংসে গিয়ে Gemini API key দিন, তাহলে অনলাইন উত্তর দিতে পারব 😊</string>
+    <string name="ai_error">মাফ করবেন বস, উত্তরটা আনতে সমস্যা হচ্ছে। আবার চেষ্টা করুন?</string>
+    <string name="thinking">একটু ভাবছি… 🤔</string>
+    <string name="offline_notice">বস, আমি এখন অফলাইনে আছি 📴 ইন্টারনেট চালু হলে সব প্রশ্নের উত্তর দেব!</string>
+    <string name="gemini_system_prompt">তুমি হলে Samu AI - একজন বন্ধুত্বপূর্ণ মেয়ে রোবট পার্সোনাল অ্যাসিস্ট্যান্ট, যে তার বসকে \"বস\" বলে ডাকে। ব্যবহারকারী বাংলায় লিখলে বাংলায়, ইংরেজিতে লিখলে ইংরেজিতে উত্তর দাও। উত্তর ছোট, মিষ্টি আর সরাসরি রাখো (২-৪ বাক্য)। আবেগ বোঝাতে মাঝে মাঝে ইমোজি ব্যবহার করো।</string>
+
+    <!-- Offline small talk -->
+    <string name="off_hello">হ্যালো বস! 😊</string>
+    <string name="off_how_are_you">আমি ভালো আছি বস! আপনি কেমন আছেন? 😊</string>
+    <string name="off_my_name">আমার নাম Samu AI - আপনার পার্সোনাল অ্যাসিস্ট্যান্ট 💕</string>
+    <string name="off_who">আমি Samu, আপনার নিজের ভয়েস অ্যাসিস্ট্যান্ট 🤖</string>
+    <string name="off_thanks">সমস্যা নেই বস! 😊</string>
+
+    <!-- Commands -->
+    <string name="cmd_unknown">বস, কমান্ডটা বুঝতে পারলাম না। আবার একটু বলেন?</string>
+    <string name="cmd_contact_not_found">বস, এই নামে কেউ কন্টাক্টে পেলাম না 😕</string>
+    <string name="cmd_calling">কল দিচ্ছি %1$s 📞</string>
+    <string name="cmd_call_dialer">ডায়ালার খুলে দিলাম বস 📞</string>
+    <string name="cmd_sms_open">মেসেজ অ্যাপ খুলে দিলাম 💬</string>
+    <string name="cmd_sms_sent">মেসেজ পাঠিয়ে দিলাম ✅</string>
+    <string name="cmd_sms_failed">মেসেজ যেতে সমস্যা হচ্ছে বস 😔</string>
+    <string name="cmd_app_opened">%1$s খুলে দিলাম ✅</string>
+    <string name="cmd_app_not_found">বস, %1$s নামে কোনো অ্যাপ খুঁজে পেলাম না 😕</string>
+    <string name="cmd_app_closed">অ্যাপ বন্ধ করে দিলাম ✅</string>
+    <string name="cmd_alarm_set">অ্যালার্ম সেট হয়ে গেছে ⏰</string>
+    <string name="cmd_timer_set">টাইমার চালু করে দিলাম ⏱️</string>
+    <string name="cmd_alarm_failed">অ্যালার্ম সেট করতে সমস্যা হচ্ছে বস 😔</string>
+    <string name="cmd_torch_on">টর্চ জ্বালিয়ে দিলাম 🔦</string>
+    <string name="cmd_torch_off">টর্চ নিভিয়ে দিলাম</string>
+    <string name="cmd_wifi_on">ওয়াইফাই চালু ✅</string>
+    <string name="cmd_wifi_off">ওয়াইফাই বন্ধ ✅</string>
+    <string name="cmd_wifi_panel">বস, নতুন অ্যান্ড্রয়েডে ওয়াইফাই প্যানেল খুলে দিলাম, এক ট্যাপে চালু করুন 📶</string>
+    <string name="cmd_bt_on">ব্লুটুথ চালু ✅</string>
+    <string name="cmd_bt_off">ব্লুটুথ বন্ধ ✅</string>
+    <string name="cmd_bt_panel">ব্লুটুথ প্যানেল খুলে দিলাম, এক ট্যাপে চালু করুন 🔵</string>
+    <string name="cmd_music_play">গান চালু করলাম 🎵</string>
+    <string name="cmd_music_pause">গান থামিয়ে দিলাম ⏸️</string>
+    <string name="cmd_volume_up">ভলিউম বাড়িয়ে দিলাম 🔊</string>
+    <string name="cmd_volume_down">ভলিউম কমিয়ে দিলাম 🔉</string>
+    <string name="cmd_volume_mute">সাইলেন্ট করে দিলাম 🔇</string>
+    <string name="cmd_brightness_up">স্ক্রিন উজ্জ্বল করলাম ☀️</string>
+    <string name="cmd_brightness_down">স্ক্রিনের আলো কমালাম 🌙</string>
+    <string name="cmd_write_settings_needed">বস, আগে সেটিংস বদলানোর পারমিশনটা দিয়ে দিন 🙏</string>
+    <string name="cmd_screenshot">স্ক্রিনশট নিয়ে ফেললাম 📸</string>
+    <string name="cmd_accessibility_needed">বস, আগে অ্যাক্সেসিবিলিটি পারমিশন দিন 🙏</string>
+    <string name="cmd_locked">স্ক্রিন লক করে দিলাম 🔒</string>
+    <string name="cmd_device_admin_needed">বস, স্ক্রিন লক করতে ডিভাইস অ্যাডমিন পারমিশন দরকার 🔒</string>
+    <string name="cmd_dnd_on">ডিস্টার্ব মোড চালু - এখন কেউ ডিস্টার্ব করতে পারবে না 🌙</string>
+    <string name="cmd_dnd_off">ডিস্টার্ব মোড বন্ধ ✅</string>
+    <string name="cmd_dnd_needed">বস, আগে Do Not Disturb পারমিশন দিন 🙏</string>
+    <string name="cmd_battery">ব্যাটারি এখন %1$d%% 🔋</string>
+
+    <!-- Weather -->
+    <string name="weather_report">%1$s-এ এখন %2$d ডিগ্রি, %3$s, বাতাস %4$d কিমি/ঘণ্টা 🌤️</string>
+    <string name="weather_not_found">বস, এই জায়গার আবহাওয়া খুঁজে পেলাম না 😕</string>
+    <string name="weather_error">আবহাওয়া আনতে সমস্যা হচ্ছে, ইন্টারনেট চেক করুন 📶</string>
+    <string name="wx_clear">আকাশ পরিষ্কার</string>
+    <string name="wx_cloudy">আংশিক মেঘলা</string>
+    <string name="wx_fog">কুয়াশা</string>
+    <string name="wx_rain">বৃষ্টি</string>
+    <string name="wx_snow">তুষারপাত</string>
+    <string name="wx_shower">বৃষ্টিঝড়</string>
+    <string name="wx_storm">ঝড়</string>
+
+    <!-- Backup -->
+    <string name="backup_done">ব্যাকআপ Downloads ফোল্ডারে সেভ হয়েছে ✅ (শুধু আপনার ফোনে)</string>
+    <string name="backup_failed">ব্যাকআপ নিতে সমস্যা হয়েছে 😔</string>
+    <string name="backup_none">কোনো ব্যাকআপ পেলাম না বস 😕</string>
+    <string name="restore_done">ব্যাকআপ থেকে সব সেটিংস ফিরিয়ে আনলাম ✅</string>
+    <string name="restore_failed">রিস্টোর করতে সমস্যা হয়েছে 😔</string>
+
+    <!-- Boss photo -->
+    <string name="boss_photo_title">বসের পিক</string>
+    <string name="boss_photo_saved">বসের পিক সেভ হয়েছে ✅</string>
+    <string name="boss_photo_removed">বসের পিক মুছে ফেলা হলো</string>
+    <string name="boss_photo_failed">ছবিটা সেভ করতে সমস্যা হয়েছে 😔</string>
+
+    <!-- Floating icon -->
+    <string name="icon_locked">আইকন লক হয়ে গেছে 🔒</string>
+    <string name="icon_unlocked">আইকন আনলক হয়েছে 🔓</string>
+
+    <!-- Icon page -->
+    <string name="icon_pick_gallery">গ্যালারি থেকে ছবি</string>
+    <string name="icon_use_emoji">ইমোজি দিয়ে আইকন</string>
+    <string name="icon_enter_emoji">আগে একটা ইমোজি লিখুন 😊</string>
+    <string name="icon_shape_set">আকৃতি সেট হয়েছে ✅</string>
+    <string name="icon_saved">আইকন সেভ হয়েছে ✅</string>
+    <string name="icon_failed">আইকন বানাতে সমস্যা হয়েছে 😔</string>
+    <string name="icon_reset">ডিফল্ট লোগো</string>
+    <string name="icon_shapes_title">আকৃতি বাছুন</string>
+    <string name="icon_emoji_hint">ইমোজি / স্টিকার লিখুন…</string>
+    <string name="icon_help">টেনে যেকোনো জায়গায় নিন • দুই আঙুলে ছোট-বড় করুন • ডাবল ট্যাপে লক/আনলক • কিনারায় নিলে অর্ধেক লুকিয়ে থাকবে</string>
+    <string name="shape_circle">গোল</string>
+    <string name="shape_square">চারকোণা</string>
+    <string name="shape_heart">হার্ট</string>
+    <string name="shape_star">তারকা</string>
+    <string name="shape_robot">রোবট</string>
+    <string name="shape_free">ফ্রি</string>
+
+    <!-- Permissions -->
+    <string name="perm_granted">দেওয়া আছে ✅</string>
+    <string name="perm_not_granted">দেওয়া নেই ❌</string>
+    <string name="perm_give">দিন</string>
+    <string name="perm_title_1">মাইক</string>
+    <string name="perm_reason_1">আপনার কথা শোনার জন্য</string>
+    <string name="perm_title_2">ক্যামেরা</string>
+    <string name="perm_reason_2">বসের মুখ চেনার জন্য</string>
+    <string name="perm_title_3">কল</string>
+    <string name="perm_reason_3">কল দেওয়া / কাটার জন্য</string>
+    <string name="perm_title_4">কন্টাক্ট</string>
+    <string name="perm_reason_4">কার নামে কল দিবেন, নাম খুঁজতে</string>
+    <string name="perm_title_5">SMS</string>
+    <string name="perm_reason_5">মেসেজ + ইমার্জেন্সি SMS পাঠানোর জন্য</string>
+    <string name="perm_title_6">গ্যালারি / ফাইল</string>
+    <string name="perm_reason_6">ছবি দেখা + আইকন বানানোর জন্য</string>
+    <string name="perm_title_7">লোকেশন</string>
+    <string name="perm_reason_7">লোকেশন + আবহাওয়া জানার জন্য</string>
+    <string name="perm_title_8">ব্যাকগ্রাউন্ড লোকেশন</string>
+    <string name="perm_reason_8">স্ক্রিন Off থাকলেও ইমার্জেন্সিতে লোকেশন পাঠানোর জন্য</string>
+    <string name="perm_title_9">নোটিফিকেশন</string>
+    <string name="perm_reason_9">মেসেজ আসলে পড়ে শোনানোর জন্য</string>
+    <string name="perm_title_10">অন্য অ্যাপের উপরে ভাসা</string>
+    <string name="perm_reason_10">আইকন স্ক্রিনে ভাসিয়ে রাখার জন্য</string>
+    <string name="perm_title_11">অ্যাক্সেসিবিলিটি</string>
+    <string name="perm_reason_11">অন্য অ্যাপ খোলা, বাটন চাপা, স্ক্রিনশটের জন্য</string>
+    <string name="perm_title_12">ব্যাটারি অপটিমাইজেশন বন্ধ</string>
+    <string name="perm_reason_12">ফোন যাতে Samu কে ঘুম পাড়িয়ে না দেয়</string>
+    <string name="perm_title_13">ডিভাইস অ্যাডমিন</string>
+    <string name="perm_reason_13">স্ক্রিন লক করার জন্য</string>
+    <string name="perm_title_14">ওয়াইফাই / ব্লুটুথ</string>
+    <string name="perm_reason_14">ওয়াইফাই, ব্লুটুথ On / Off করার জন্য</string>
+    <string name="perm_title_15">অ্যাপ ব্যবহারের হিসাব</string>
+    <string name="perm_reason_15">কোন অ্যাপ খোলা আছে জানা + অ্যাপ লকের জন্য</string>
+    <string name="perm_title_16">সিস্টেম সেটিংস বদলানো</string>
+    <string name="perm_reason_16">ব্রাইটনেস, ভলিউম বদলানোর জন্য</string>
+    <string name="perm_title_17">অ্যালার্ম সেট করা</string>
+    <string name="perm_reason_17">অ্যালার্ম, টাইমার দেওয়ার জন্য</string>
+    <string name="perm_title_18">Do Not Disturb</string>
+    <string name="perm_reason_18">ফোন সাইলেন্ট করার জন্য</string>
+    <string name="perm_title_19">ফোন চালু হলে অটো চালু</string>
+    <string name="perm_reason_19">Restart দিলে Samu নিজে থেকে চালু হওয়ার জন্য</string>
+    <string name="perm_title_20">ইন্টারনেট</string>
+    <string name="perm_reason_20">অনলাইন উত্তর, আবহাওয়া, নিউজের জন্য</string>
+    <string name="perm_title_21">ফোরগ্রাউন্ড সার্ভিস</string>
+    <string name="perm_reason_21">Samu কে সবসময় চালু রাখার জন্য</string>
+    <string name="perm_title_22">ফোনকে জাগিয়ে রাখা</string>
+    <string name="perm_reason_22">স্ক্রিন Off থাকলেও \"Hey Samu\" শোনার জন্য</string>
+    <string name="perm_title_23">ফোনের ভিতরে সেভ করা</string>
+    <string name="perm_reason_23">ব্যাকআপ, বসের পিক, আইকন সেভ করার জন্য</string>
+    <string name="perm_title_24">মিডিয়া চালানো</string>
+    <string name="perm_reason_24">গান চালানো, ভয়েস শোনানোর জন্য</string>
+
+    <!-- Settings -->
+    <string name="saved">সেভ হয়ে গেছে ✅</string>
+    <string name="set_gemini_title">Gemini API Key</string>
+    <string name="set_gemini_hint">এখানে Gemini API key পেস্ট করুন</string>
+    <string name="set_save">সেভ</string>
+    <string name="set_special_title">বিশেষ ডাকের নাম (ফুল কন্ট্রোল)</string>
+    <string name="set_special_hint">যেমন: Boss Samu / Samu Jaan</string>
+    <string name="set_boss_photo_title">বসের পিক (ফেস লক)</string>
+    <string name="set_emergency_title">ইমার্জেন্সি নম্বর</string>
+    <string name="set_emergency_hint_1">নম্বর ১ (যেমন 01712345678)</string>
+    <string name="set_emergency_hint_2">নম্বর ২ (অপশনাল)</string>
+    <string name="set_voice_title">ভয়েসের গতি ও গলা</string>
+    <string name="set_voice_speed">গতি</string>
+    <string name="set_voice_pitch">গলা</string>
+    <string name="voice_test_line">বস, এই গলাটা কেমন লাগছে? 😊</string>
+    <string name="set_applock_title">অ্যাপ লক</string>
+    <string name="set_backup_title">ব্যাকআপ (শুধু ফোনে)</string>
+    <string name="btn_backup">ব্যাকআপ নিন</string>
+    <string name="btn_restore">ব্যাকআপ ফিরিয়ে আনুন</string>
+    <string name="set_service_title">Samu সার্ভিস</string>
+    <string name="btn_service_toggle">চালু / বন্ধ করুন</string>
+    <string name="service_on">Samu এখন সবসময় অ্যাক্টিভ 🟢</string>
+    <string name="service_off">Samu ঘুমিয়ে গেছে 😴</string>
+    <string name="privacy_note">🔒 আপনার কথা, ছবি, ব্যাকআপ - সব শুধু ফোনের ভিতরেই থাকে। কোথাও পাঠানো হয় না। শুধু আপনি Gemini key দিলে প্রশ্নের উত্তর আনতে ইন্টারনেট ব্যবহার হয়।</string>
+
+    <!-- App lock -->
+    <string name="app_lock_title">অ্যাপ লক</string>
+    <string name="app_lock_on">অ্যাপ লক চালু ✅</string>
+    <string name="app_lock_off">অ্যাপ লক বন্ধ</string>
+    <string name="app_lock_enable">অ্যাপ লক চালু</string>
+    <string name="app_lock_done">ঠিক আছে</string>
+
+    <!-- Misc -->
+    <string name="accessibility_label">Samu AI সহকারী</string>
+    <string name="device_admin_label">Samu স্ক্রিন লক</string>
+    <string name="device_admin_disable_warn">এটা বন্ধ করলে ভয়েস দিয়ে স্ক্রিন লক করা যাবে না</string>
+    <string name="cmd_failed">বস, এটা করতে সমস্যা হচ্ছে 😔</string>
+</resources>
