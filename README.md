@@ -8,6 +8,10 @@ Android Studio প্রজেক্ট (Java)। পুরো অ্যাপ�
 2. Android Studio (Hedgehog/Iguana বা নতুন) খুলে **File > Open** দিয়ে প্রজেক্ট ফোল্ডারটি খুলুন।
 3. Gradle sync শেষ হলে **Run** চাপুন (প্রথমবার Gradle 8.7 + SDK 34 ডাউনলোড হবে)।
 
+> নোট: `gradle/wrapper/gradle-wrapper.jar` রিপোতে নেই — Android Studio নিজেই `gradle-wrapper.properties` থেকে Gradle 8.7 নামিয়ে নেবে, কিছু করতে হবে না। (শুধু টার্মিনাল থেকে `./gradlew` চালাতে চাইলে একবার `gradle wrapper` কমান্ড চালাতে হবে।)
+
+> আপনার নিজের PNG লোগো ব্যবহার করতে চাইলে: `app/src/main/res/mipmap-xxxhdpi/` ফোল্ডার বানিয়ে সেখানে `ic_launcher.png` নামে লোগোটি রাখুন এবং `mipmap-anydpi-v26/`-এর দুটি XML মুছে দিন।
+
 > যদি sync জিজ্ঞেস করে, Gradle JDK হিসেবে **Embedded JDK (17)** সিলেক্ট করুন।
 
 ## ফিচারসমূহ
