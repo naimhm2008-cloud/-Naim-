@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nav_icon"
+            android:textColor="@color/samu_pink"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/icon_help"
+            android:textColor="@color/samu_text_dim"
+            android:textSize="13sp" />
+
+        <FrameLayout
+            android:id="@+id/icon_preview"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_card" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/icon_shapes_title"
+            style="@style/SamuSectionTitle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button android:id="@+id/btn_shape_circle" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="@string/shape_circle" style="@style/SamuButton" android:layout_margin="3dp" />
+            <Button android:id="@+id/btn_shape_square" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="@string/shape_square" style="@style/SamuButton" android:layout_margin="3dp" />
+            <Button android:id="@+id/btn_shape_heart" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="@string/shape_heart" style="@style/SamuButton" android:layout_margin="3dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button android:id="@+id/btn_shape_star" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="@string/shape_star" style="@style/SamuButton" android:layout_margin="3dp" />
+            <Button android:id="@+id/btn_shape_robot" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="@string/shape_robot" style="@style/SamuButton" android:layout_margin="3dp" />
+            <Button android:id="@+id/btn_shape_free" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="@string/shape_free" style="@style/SamuButton" android:layout_margin="3dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_pick_gallery"
+            style="@style/SamuSectionTitle" />
+
+        <Button
+            android:id="@+id/btn_icon_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_pick_gallery"
+            style="@style/SamuButton" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_use_emoji"
+            style="@style/SamuSectionTitle" />
+
+        <EditText
+            android:id="@+id/icon_emoji_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/icon_emoji_hint"
+            style="@style/SamuInput" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <Button android:id="@+id/btn_icon_emoji" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="@string/icon_use_emoji" style="@style/SamuButton" android:layout_margin="3dp" />
+            <Button android:id="@+id/btn_icon_reset" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="@string/icon_reset" style="@style/SamuButton" android:layout_margin="3dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
