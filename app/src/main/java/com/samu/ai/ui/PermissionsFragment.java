@@ -9,9 +9,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
+import android.os.Bundle;
 import android.provider.Settings;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
@@ -34,7 +36,7 @@ public class PermissionsFragment extends Fragment {
     }
 
     @Override
-    public void onViewCreated(@NonNull android.view.View v, @androidx.annotation.Nullable Bundle s) {
+    public void onViewCreated(@NonNull android.view.View v, @Nullable Bundle s) {
         super.onViewCreated(v, s);
         androidx.recyclerview.widget.RecyclerView rv = v.findViewById(R.id.permission_list);
         rv.setLayoutManager(new androidx.recyclerview.widget.LinearLayoutManager(requireContext()));

@@ -2,6 +2,7 @@ package com.samu.ai.service;
 
 import android.annotation.SuppressLint;
 import android.app.Service;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -215,15 +216,15 @@ public class FloatingIconService extends Service {
                     float dist = Math.abs(event.getRawX() - lastDownX)
                             + Math.abs(event.getRawY() - lastDownY);
                     if (dt < 250 && dist < dp(10)) {
-                        if (iconView.getTag("taps") != null
-                                && (Long) iconView.getTag("taps") > 0) {
+                        if (iconView.getTag() != null
+                                && (Long) iconView.getTag() > 0) {
                             locked = !locked;
                             saveState(lp);
                             showToast(locked ? R.string.icon_locked : R.string.icon_unlocked);
-                            iconView.setTag("taps", null);
+                            iconView.setTag(null);
                         } else {
-                            iconView.setTag("taps", 1L);
-                            handler.postDelayed(() -> iconView.setTag("taps", null), 350);
+                            iconView.setTag(1L);
+                            handler.postDelayed(() -> iconView.setTag(null), 350);
                         }
                     } else if (!locked) {
                         saveState(lp);

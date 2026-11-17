@@ -14,6 +14,7 @@ import androidx.camera.lifecycle.ProcessCameraProvider;
 import androidx.core.content.ContextCompat;
 
 import com.google.common.util.concurrent.ListenableFuture;
+import com.google.mlkit.vision.face.FaceDetector;
 import com.samu.ai.R;
 import com.samu.ai.util.TtsManager;
 

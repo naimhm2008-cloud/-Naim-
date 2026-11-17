@@ -226,7 +226,7 @@ public class PhoneActions {
                 return on ? ctx.getString(R.string.cmd_bt_on) : ctx.getString(R.string.cmd_bt_off);
             }
             if (Build.VERSION.SDK_INT >= 31) {
-                Intent panel = new Intent(Settings.Panel.ACTION_BLUETOOTH);
+                Intent panel = new Intent(Settings.ACTION_BLUETOOTH_SETTINGS);
                 panel.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 ctx.startActivity(panel);
                 return ctx.getString(R.string.cmd_bt_panel);

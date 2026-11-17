@@ -86,12 +86,12 @@ public class GeminiClient {
         JSONObject resp = new JSONObject(sb.toString());
         JSONArray candidates = resp.optJSONArray("candidates");
         if (candidates == null || candidates.length() == 0) throw new IllegalStateException("empty");
-        JSONArray parts = candidates.getJSONObject(0)
+        JSONArray respParts = candidates.getJSONObject(0)
                 .getJSONObject("content")
                 .getJSONArray("parts");
         StringBuilder out = new StringBuilder();
-        for (int i = 0; i < parts.length(); i++) {
-            out.append(parts.getJSONObject(i).optString("text", ""));
+        for (int i = 0; i < respParts.length(); i++) {
+            out.append(respParts.getJSONObject(i).optString("text", ""));
         }
         return out.toString().trim();
     }
