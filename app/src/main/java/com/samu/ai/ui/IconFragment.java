@@ -135,7 +135,7 @@ public class IconFragment extends Fragment {
     }
 
     private interface JSONObjectEditor {
-        void edit(JSONObject o);
+        void edit(JSONObject o) throws Exception;
     }
 
     @Override
