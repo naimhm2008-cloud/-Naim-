@@ -166,12 +166,13 @@ public class FloatingIconService extends Service {
         if ("none".equals(shape) || "free".equals(shape)) return;
         v.setBackground(gd);
         v.setClipToOutline(true);
+        final int radius = r;
         try {
             v.setOutlineProvider(new android.view.ViewOutlineProvider() {
                 @Override
                 public void getOutline(View view, android.graphics.Outline outline) {
                     if ("circle".equals(shape)) outline.setOval(0, 0, view.getWidth(), view.getHeight());
-                    else outline.setRoundRect(0, 0, view.getWidth(), view.getHeight(), r);
+                    else outline.setRoundRect(0, 0, view.getWidth(), view.getHeight(), radius);
                 }
             });
             v.setClipToOutline(true);
